@@ -19,8 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
-	<link rel="stylesheet" type="text/css" href="css/chosen.css">
-
+	<link rel="stylesheet" type="text/css" href="css/chosen.css"> 
 	<link rel="stylesheet" type="text/css" href="css/woocommerce.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -96,7 +95,8 @@
                <!-- /.ts-mainmenu-inner -->
       </header>
 	<section class="page-banner">
-		<h2 class="page-title">商城</h2>
+		<h2 class="page-title">商城</h2> 
+		<nav class="woocommerce-breadcrumb"><a href="index.html">主页</a>商城</nav> 
 	</section>
 	
 	<section class="section-slider">
@@ -132,7 +132,7 @@
 				<div class="image-cat" style="background-image:url(images/460x467.png)"></div>
 				<div class="category-info">
 					<span class="cat-icon"><img src="images/icon-cat3.svg" alt=""></span>
-					<h4><a href="#">外套</a></h4>
+					<h4><a href="products.html">外套</a></h4>
 					<p>Monotonectally recaptiualize leading-edge</p>
 				</div>
 			</div>
@@ -142,7 +142,7 @@
 				<div class="image-cat" style="background-image:url(images/1380x467.png)"></div>
 				<div class="category-info">
 					<span class="cat-icon"><img src="images/icon-cat4.svg" alt=""></span>
-					<h4><a href="#">连衣裙</a></h4>
+					<h4><a href="products.html">连衣裙</a></h4>
 					<p>Monotonectally recaptiualize leading-edge</p>
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 				<div class="image-cat" style="background-image:url(images/460x467.png)"></div>
 				<div class="category-info">
 					<span class="cat-icon"><img src="images/icon-cat5.svg" alt=""></span>
-					<h4><a href="#">上装</a></h4>
+					<h4><a href="products.html">上装</a></h4>
 					<p>Monotonectally recaptiualize leading-edge</p>
 				</div>
 			</div>
@@ -162,7 +162,7 @@
 				<div class="image-cat" style="background-image:url(images/460x467.png)"></div>
 				<div class="category-info">
 					<span class="cat-icon"><img src="images/icon-cat6.svg" alt=""></span>
-					<h4><a href="#">下装</a></h4>
+					<h4><a href="products.html">下装</a></h4>
 					<p>Monotonectally recaptiualize leading-edge</p>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 				<div class="image-cat" style="background-image:url(images/920x467.png)"></div>
 				<div class="category-info">
 					<span class="cat-icon"><img src="images/icon-cat7.svg" alt=""></span>
-					<h4><a href="#">套装</a></h4>
+					<h4><a href="products.html">套装</a></h4>
 					<p>Monotonectally recaptiualize leading-edge</p>
 				</div>
 				</a> 
@@ -186,10 +186,11 @@
 	  </div>
       <div class="right-footer">
          <ul class="ts-social-footer">
-            <li><a href="#" class="icon-bg01">&nbsp;</a></li>
-            <li><a href="#" class="icon-bg02">&nbsp;</a></li>
-            <li><a href="#" class="icon-bg03">&nbsp;</a></li>
-            <li><a href="#" class="icon-bg04">&nbsp;</a></li>
+         	<li><a href="#" class="icon-bg01">&nbsp;</a></li>
+         	<li><a href="#" class="icon-bg02">&nbsp;</a></li>
+         	<li><a href="#" class="icon-bg03">&nbsp;</a></li>
+         	<li><a href="#" class="icon-bg04">&nbsp;</a></li> 
+         	<li><a href="#" class="icon-bg05">&nbsp;</a></li>
          </ul>
          <ul class="menu-footer">
             <li> <a href="index.html" title="">主页</a></li>
@@ -212,31 +213,10 @@
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
 	<script type="text/javascript" src="js/packery-mode.pkgd.min.js"></script>
-	<script type='text/javascript' src='js/debounced-resize/jquery.debouncedresize.js'></script>
-      <script type="text/javascript" src="js/nicescroll/jquery.nicescroll.min.js"></script>
-      <script src="js/front-end.js"></script>
-      <script src="js/custom.js"></script>
-      <script>
-         //CATEGORIES GRID
-          $('.grid-masonry').each(function(){
-              var $isotopGrid = $(this);
-              var layout_mode = $isotopGrid.attr('data-layoutmode');
-              // Re-layout after images loaded
-              $isotopGrid.isotope({
-                  resizable: false, 
-                  itemSelector : '.grid',
-                  layoutMode: layout_mode,
-                  transitionDuration: '0.6s',
-                  packery: {
-                      gutter: 0
-                  },
-              }).isotope( 'layout' );
-              
-              // layout Isotope after each image loads
-              $isotopGrid.imagesLoaded().progress( function() {
-                  $isotopGrid.isotope('layout');
-              });
-          });
-      </script>
+	<script type="text/javascript" src="js/debounced-resize/jquery.debouncedresize.js"></script>
+    <script type="text/javascript" src="js/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/front-end.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+ 
 </body>
 </html>
